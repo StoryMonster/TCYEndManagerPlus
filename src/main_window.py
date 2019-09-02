@@ -7,8 +7,8 @@ class MainWindow(QMainWindow):
     def __init__(self, parent=None, title="", servers={}, clients={}, wxclients={}, others={}):
         super().__init__(parent)
         self.setWindowTitle(title)
-        self.mainPanel = MainPanel(self, servers, others)
-        #self.wxClientsPanel = WxClientsPanel(self, wxclients) if len(wxclients) > 0 else None
-        #if self.wxClientsPanel:
-        #    self.setCentralWidget(self.wxClientsPanel)
+        #self.mainPanel = MainPanel(self, servers, others)
+        self.wxClientsPanel = WxClientsPanel(self, wxclients) if len(wxclients) > 0 else None
+        if self.wxClientsPanel:
+            self.setCentralWidget(self.wxClientsPanel)
         
