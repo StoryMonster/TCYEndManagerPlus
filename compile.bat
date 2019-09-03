@@ -1,1 +1,1 @@
-pyinstaller -F -i .\res\exe.ico pack.spec
+pyinstaller -F pack.spec
