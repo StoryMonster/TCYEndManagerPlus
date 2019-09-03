@@ -21,3 +21,6 @@ class WxClientCtrlItem(QFrame):
 
     def getUrl(self):
         return self.editBox.displayText()
+    
+    def isSelected(self):
+        return self.cbButton.isChecked()
